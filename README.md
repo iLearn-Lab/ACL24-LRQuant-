@@ -1,4 +1,26 @@
-# LRQuant: Learnable and Robust Post-Training Quantization for Large Language Models
+<div align="center">
+<h2 align="center">
+   <img src="./assets/optimus3.png" style="vertical-align: middle; height: 1em; padding: 0 0.2em;"> <b>LRQuant: Learnable and Robust Post-Training Quantization for Large Language Models </b>
+</h2>
+<div>
+<a target="_blank" href="https://scholar.google.com/citations?user=lrJ0VWYAAAAJ&hl=zh-CN">Jiaqi&#160;Zhao</a><sup>1</sup>,
+<a target="_blank" href="https://scholar.google.com/citations?user=6EUV_UMAAAAJ&hl=en">Miao&#160;Zhang</a><sup>1&#9993</sup>,
+<a target="_blank" href="https://aclanthology.org/people/chao-zeng/unverified/">Chao&#160;Zeng</a><sup>1</sup>,
+<a target="_blank" href="https://aclanthology.org/people/ming-wang/unverified/">Ming&#160;Wang</a><sup>1</sup>,
+<br>
+<a target="_blank" href="https://scholar.google.com/citations?user=XkDl9aoAAAAJ&hl=en">Xuebo&#160;Liu</a><sup>1</sup>,
+<a target="_blank" href="https://scholar.google.com/citations?user=yywVMhUAAAAJ&hl=en">Liqiangi&#160;Nie</a><sup>1</sup>,
+</div>
+<sup>1</sup>Harbin Institute of Technology, Shenzhen&#160&#160&#160</span>
+<br />
+<sup>&#9993&#160;</sup>Corresponding author&#160;&#160;</span>
+<br/>
+<div align="center">
+    <a href="https://aclanthology.org/2024.acl-long.122/" target="_blank">
+    <img src="https://img.shields.io/badge/Paper-arXiv-deepgreen" alt="Paper arXiv"></a>
+</div>
+</div>
+
 **We propose a novel post-training quantization method for large language models with learnable parameters, novel loss function and Test-time adaptation scheme.**
 
 Post-training quantization (PTQ) for large language models (LLMs) significantly accelerates model inference and relieves memory constraints, without incurring model training. A ``smoothing paradigm'' is commonly used in LLM quantization, which transfers the quantization difficulty of activation to weight quantization using mathematically equivalent transformations. However, existing methods face two issues: 1) Most smoothing parameters are hand-crafted defined which leads to suboptimal results; 2) There are significant performance degradations when tested on unseen datasets. To address these challenges, this paper introduces a robust learnable smooth-based PTQ framework, called LRQuant. Firstly, we consider a learnable paradigm to find optimal smoothing parameters which are initialized by logarithmic activation equivalent. In addition, we empirically found that only relying on MSE loss could hardly lead to optimal quantization results, and we then propose a novel loss function based on the negative logarithm of cosine similarity (NLC loss) between outputs of full-precision and quantized block. At last, we pioneeringly introduce Test-time adaptation (TTA) into LLM quantization, which allows for rapid model adaptation during testing to improve generalization performance. More surprisingly, we find that by using our TTA method, we can achieve better results on test sets than directly using test sets for calibration in some cases while avoiding catastrophic forgetting. 
