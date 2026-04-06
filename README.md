@@ -1,13 +1,12 @@
 <div align="center">
 <h2 align="center">
-   <img src="./assets/optimus3.png" style="vertical-align: middle; height: 1em; padding: 0 0.2em;"> <b>LRQuant: Learnable and Robust Post-Training Quantization for Large Language Models </b>
+<b>LRQuant: Learnable and Robust Post-Training Quantization for Large Language Models </b>
 </h2>
 <div>
 <a target="_blank" href="https://scholar.google.com/citations?user=lrJ0VWYAAAAJ&hl=zh-CN">Jiaqi&#160;Zhao</a><sup>1</sup>,
 <a target="_blank" href="https://scholar.google.com/citations?user=6EUV_UMAAAAJ&hl=en">Miao&#160;Zhang</a><sup>1&#9993</sup>,
 <a target="_blank" href="https://aclanthology.org/people/chao-zeng/unverified/">Chao&#160;Zeng</a><sup>1</sup>,
 <a target="_blank" href="https://aclanthology.org/people/ming-wang/unverified/">Ming&#160;Wang</a><sup>1</sup>,
-<br>
 <a target="_blank" href="https://scholar.google.com/citations?user=XkDl9aoAAAAJ&hl=en">Xuebo&#160;Liu</a><sup>1</sup>,
 <a target="_blank" href="https://scholar.google.com/citations?user=yywVMhUAAAAJ&hl=en">Liqiangi&#160;Nie</a><sup>1</sup>,
 </div>
